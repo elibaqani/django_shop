@@ -1,0 +1,19 @@
+
+<h2>دسته بندی محصولات</h2>
+                        <div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="/product">همه</a></h4>
+							{% for category in cate %}
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+                                        <a href="/product/{{ category.name }}">{{ category.title }}</a>
+                                    </h4>
+								</div>
+							</div>
+							 {% endfor %}
+                        </div>
+                            </div>
+                        </div>
